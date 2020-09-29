@@ -33,4 +33,10 @@ There are countless other things that needed refinement but was still satisfying
 
 Thanks for reading!
 
+# Screenshots
 
+![Sending photos](1.png)
+
+![About page](2.png)
+
+![Chat menu](3.png)
