@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/viewholder_friendrequestactivity"
+    android:visibility="visible"
+    android:background="@color/fui_transparent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="0dp"
+        android:id="@+id/profile_picture_cardview_query">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_picture_query"
+            android:src="@drawable/ic_person_black_24dp"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:id="@+id/user_name_query"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/profile_picture_cardview_query"/>
+
+
+</RelativeLayout>

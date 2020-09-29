@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFlow.profileActivity"
+    android:background="@color/colorAccent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/username_profilevieweractivity"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="1dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pfp_profilevieweractivity"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_person_black_24dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/colorPrimary"
+        android:text="Username"
+        android:textSize="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/username_profilevieweractivity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:text="Bio"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/username_profilevieweractivity"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bio_profilevieweractivity"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginEnd="5dp"
+        app:cardElevation="5dp"
+        android:layout_below="@id/bio_profilevieweractivity"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Send friend request"
+            android:background="@color/fui_transparent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/sendrequest_profilevieweractivity"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="5dp"
+        app:cardElevation="5dp"
+        android:layout_below="@id/bio_profilevieweractivity"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/friendalreadyadded_profilevieweractivity"
+        android:visibility="gone">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Friend already added"
+            android:background="@color/fui_transparent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatsFlow.GroupsFlow.joinGroupActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/colorPrimary"
+        android:text="Enter your invite code"
+        android:textSize="35sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/enterinvitecodetitle_joingroupactivity"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterinvitecodetitle_joingroupactivity"
+        android:layout_centerHorizontal="true"
+        android:inputType="textFilter"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Code"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:id="@+id/enterinvitecode_joingroupactivity"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginEnd="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/enterinvitecode_joingroupactivity">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Attempt to join group"
+            android:background="@color/fui_transparent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/joingroupbutton_joingroupactivity"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

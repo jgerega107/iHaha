@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatsFlow.GroupsFlow.newGroupActivity"
+    android:background="@color/colorAccent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="1500dp"
+        android:layout_margin="20dp"
+        android:id="@+id/grouppicturecard_newgroupactivity">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_group_black_24dp"
+            android:id="@+id/grouppicture_newgroupactivity"
+            android:background="@color/fui_transparent" />
+    </androidx.cardview.widget.CardView>
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/grouppicturecard_newgroupactivity"
+        android:layout_marginTop="30dp"
+        android:inputType="textFilter"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Group title"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:id="@+id/editname_newgroupactivity"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grouppicturecard_newgroupactivity"
+        android:inputType="textFilter|textMultiLine"
+        android:textColor="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Group description"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editdescription_newgroupactivity"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editdescription_newgroupactivity"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="@color/colorText"
+        android:id="@+id/moonbasealphamodecheckbox_newgroupactivity"
+        android:text="Moonbase Alpha Mode (BETA)"
+        android:textColor="@color/colorPrimaryDark"
+        android:enabled="true"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/moonbasealphamodecheckbox_newgroupactivity"
+        app:cardElevation="5dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Create"
+            android:background="@color/fui_transparent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/creategroupbutton_groupsoverviewfragment"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

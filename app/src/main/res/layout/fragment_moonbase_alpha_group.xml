@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fui_transparent"
+    android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/recycler_moonbasealphagroupfragment">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sendmessagedrawer_moonbasealphagroupfragment"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            app:cardBackgroundColor="#E9E9E9"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/entermessage_moonbasealphagroupfragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:singleLine="true"/>
+
+            <ImageButton
+                android:id="@+id/sendmessage_moonbasealphagroupfragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/fui_transparent"
+                android:src="@drawable/ic_send_black_24dp"
+                android:tint="@color/colorPrimary" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/fui_transparent"
+            android:src="@drawable/ic_volume_up_black_24dp"
+            android:tint="@color/colorPrimary"
+            android:id="@+id/allowt2s_moonbasealphagroupfragment"/>
+        <ImageButton
+            android:id="@+id/disallowt2s_moonbasealphagroupfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/fui_transparent"
+            android:src="@drawable/ic_volume_off_black_24dp"
+            android:tint="@color/colorPrimary"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>

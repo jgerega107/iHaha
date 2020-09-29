@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChatsFlow.MessagesFlow.conversationActivity"
+    android:background="@color/colorAccent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_conversationfragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendnotaddednotice_conversationfragment"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Cannot message user until recepient accepts friend request."
+            android:layout_margin="20dp"
+            android:textColor="@color/colorText"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sendmessagedrawer_conversationfragment"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <EditText
+                android:id="@+id/entermessage_conversationfragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="40dp"
+                android:singleLine="true"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <ImageButton
+                android:id="@+id/sendmessage_conversationfragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/fui_transparent"
+                android:src="@drawable/ic_send_black_24dp"
+                android:tint="@color/colorPrimary" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/selectimage_conversationfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/fui_transparent"
+            android:src="@drawable/ic_insert_photo_black_24dp"
+            android:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/sendimagedrawer_conversationfragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="10dp">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:indeterminateTint="@color/colorPrimary"
+                android:id="@+id/sendimagedrawer_progressbar_conversationfragment"/>
+
+            <FrameLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="15dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/sendimagepreview_conversationfragment"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="top|end"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ihaha"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/fui_transparent"
+                    android:scaleX="2.0"
+                    android:scaleY="2.0"
+                    android:src="@drawable/ic_clear_black_24dp"
+                    android:tint="@color/colorPrimary"
+                    android:id="@+id/cancelimage_conversationfragment"/>
+            </FrameLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/fui_transparent"
+                android:src="@drawable/ic_send_black_24dp"
+                android:tint="@color/colorPrimary"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="70dp"
+                android:scaleX="2.0"
+                android:scaleY="2.0"
+                android:id="@+id/sendimage_conversationfragment"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

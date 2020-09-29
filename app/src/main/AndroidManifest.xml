@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aftertastephd.ihaha">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".aboutActivity"></activity>
+        <activity android:name=".ChatsFlow.GroupsFlow.moonbaseAlphaGroupActivity" />
+        <activity android:name=".ProfileFlow.friendRequestViewerActivity" />
+        <activity android:name=".ProfileFlow.profileActivity" />
+        <activity android:name=".ChatsFlow.GroupsFlow.joinGroupActivity" />
+        <activity android:name=".ChatsFlow.GroupsFlow.groupActivity" />
+        <activity android:name=".ChatsFlow.GroupsFlow.previewInviteCodeActivity" />
+        <activity android:name=".ChatsFlow.GroupsFlow.newGroupActivity" />
+        <activity android:name=".ChatsFlow.MessagesFlow.photoViewerActivity" />
+        <activity android:name=".ProfileFlow.editProfileActivity" />
+        <activity
+            android:name=".ChatsFlow.MessagesFlow.conversationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ProfileFlow.FriendsFlow.profileViewerActivity" />
+        <activity android:name=".ProfileFlow.FriendsFlow.addFriendActivity" />
+        <activity android:name=".CameraFlow.selectChatActivity" />
+        <activity android:name=".CameraFlow.onPictureTakenActivity" />
+        <activity
+            android:name=".homeActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".mainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_message_black_24dp" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6a897d634d1264fc87483667dd64e8ebd63fdc6c" />
+    </application>
+
+</manifest>

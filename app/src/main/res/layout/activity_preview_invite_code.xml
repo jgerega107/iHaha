@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatsFlow.GroupsFlow.previewInviteCodeActivity"
+    android:background="@color/colorAccent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_above="@id/yourinvitecodetitle_previewinvitecodeactivity"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="1dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/grouppicture_previewinvitecodeactivity"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/colorPrimary"
+        android:text="Your invite code is:"
+        android:textSize="40sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/yourinvitecodetitle_previewinvitecodeactivity"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/codeandcopy_previewinvitecodeactivity"
+        android:layout_below="@id/yourinvitecodetitle_previewinvitecodeactivity"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:id="@+id/invitecode_previewinvitecodeactivity"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copytoclipboard_previewinvitecodeactivity"
+            android:src="@drawable/ic_content_copy_black_24dp"
+            android:tint="@color/colorPrimary"
+            android:background="@color/fui_transparent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codeandcopy_previewinvitecodeactivity"
+        android:layout_centerHorizontal="true"
+        android:text="Send this code to your friends in order to have them join your new group!"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="50dp"
+        android:textSize="20sp"
+        android:id="@+id/notice_previewinvitecodeactivity"/>
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:layout_marginEnd="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/notice_previewinvitecodeactivity">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Thanks!"
+        android:background="@color/fui_transparent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/thanks_previewinvitecodeactivity"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

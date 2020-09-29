@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraFlow.selectChatActivity"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:id="@+id/conversationrecycler_selectchatactivity"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_gravity="bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="start|center_vertical"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:id="@+id/filename_selectchatactivity"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="5dp"
+            android:id="@+id/imagepreview_selectchatactivity"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_black_24dp"
+            android:background="@color/fui_transparent"
+            android:tint="@color/colorAccent"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="60dp"
+            android:id="@+id/sendimages_selectchatactivity"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

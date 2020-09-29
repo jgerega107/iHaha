@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">iHaha</string>
+    <string name="tab_text_1">Messages</string>
+    <string name="tab_text_2">Camera</string>
+    <string name="tab_text_3">Groups</string>
+
+    <string name="notificationchannelid">ihahachannel</string>
+    <string name="notificationchannelname">iHaha</string>
+    <string name="notificationchanneldesc">iHaha Message Notification</string>
+
+
+</resources>

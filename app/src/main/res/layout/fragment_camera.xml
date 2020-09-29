@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent">
+    <com.camerakit.CameraKitView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:camera_flash="auto"
+        app:camera_facing="back"
+        app:camera_focus="continuous"
+        app:camera_permissions="camera"
+        android:id="@+id/camera">
+
+    </com.camerakit.CameraKitView>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="40dp"
+        android:background="@color/fui_transparent"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/ic_switch_camera_black_24dp"
+        android:tint="@color/colorPrimaryDark"
+        android:id="@+id/camera_switchcamera"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/fui_transparent"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/ic_photo_camera_black_24dp"
+        android:tint="@color/colorPrimaryDark"
+        android:id="@+id/camera_takephoto"/>
+
+</RelativeLayout>

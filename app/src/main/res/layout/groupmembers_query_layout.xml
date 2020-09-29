@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewholder_groupmembersfragment"
+    android:visibility="visible"
+    android:background="@color/fui_transparent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="0dp"
+        android:id="@+id/profile_picture_cardview_groupmembersfragment">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_picture_groupmembersfragment"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/profile_picture_cardview_groupmembersfragment"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:id="@+id/user_name_groupmembersfragment"/>
+
+</RelativeLayout>

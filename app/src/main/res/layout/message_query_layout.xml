@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/fui_transparent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:orientation="vertical"
+        android:id="@+id/receiveimage_layout_conversationactivity"
+        android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profile_picture_cardview_receiveimage_conversationactivity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    app:cardCornerRadius="15dp">
+                    <ImageView
+                        android:id="@+id/profile_picture_receiveimage_conversationactivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_person_black_24dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_toEndOf="@id/profile_picture_cardview_receiveimage_conversationactivity"
+                    app:cardElevation="1dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/imageview_receiveimage_cardview_conversationactivity">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/fui_transparent"
+                        android:id="@+id/imagebutton_receiveimage_conversationactivity"/>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/authorandtimestamp_receiveimage_conversationactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:orientation="vertical"
+        android:id="@+id/receivemessage_layout_conversationactivity"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profile_picture_cardview_receivemessage_conversationactivity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    app:cardCornerRadius="15dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/profile_picture_receivemessage_conversationactivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_person_black_24dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/message_receivemessage_conversationactivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/profile_picture_cardview_receivemessage_conversationactivity"
+                    android:textColor="@color/colorText"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="15dp"
+                    android:textIsSelectable="true"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:id="@+id/authorandtimestamp_receivemessage_conversationactivity"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:orientation="vertical"
+        android:id="@+id/sendimage_layout_conversationactivity"
+        android:visibility="gone">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profile_picture_cardview_sendimage_conversationactivity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:id="@+id/profile_picture_sendimage_conversationactivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_person_black_24dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_toEndOf="@id/profile_picture_cardview_sendimage_conversationactivity"
+                    app:cardElevation="1dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/imageview_sendimage_cardview_conversationactivity">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imagebutton_sendimage_conversationactivity"
+                        android:background="@color/fui_transparent"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/authorandtimestamp_sendimage_conversationactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:layout_gravity="end"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:orientation="vertical"
+        android:id="@+id/sendmessage_layout_conversationactivity"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="end">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profile_picture_cardview_sendmessage_conversationactivity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="13dp"
+                    app:cardCornerRadius="15dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/profile_picture_sendmessage_conversationactivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_person_black_24dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/message_sendmessage_conversationactivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/profile_picture_cardview_sendmessage_conversationactivity"
+                    android:textColor="@color/colorText"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="15dp"
+                    android:textIsSelectable="true"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="5dp"
+            android:textSize="12sp"
+            android:id="@+id/authorandtimestamp_sendmessage_conversationactivity"
+            android:layout_gravity="end"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>
